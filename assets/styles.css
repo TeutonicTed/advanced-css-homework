@@ -56,7 +56,7 @@ section ul li{
 /* About me */
 #summary{
     margin: 20px 100px;
-    padding: 5px 250px;
+    padding: 5px 50px;
     flex-basis: 100%
 }
 
@@ -74,7 +74,7 @@ section ul li{
     height: auto;
 }
 
-/* Allows images to stack into columns & adjust sizing for "About-Me Summary" */
+/* Adjusts sizing for "About-Me Summary" */
 @media screen and (max-width: 768px) {
     #summary{
         display: flex;
@@ -89,7 +89,8 @@ section ul li{
 }
 
 /* Work */
-.work{
+
+.images{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -99,8 +100,11 @@ section ul li{
     width: 100%;
 }
 
+.work .project{
+    display: block;
+}
+
 .work img{
-    display: flex;
     background-color: gray;
     color: white;
     padding: 1px;
@@ -111,13 +115,11 @@ section ul li{
 }
 
 #image-1{
-    display: flex;
     background-color: gray;
     justify-items: center;
     align-items: center;
     max-width: 800px;
-    max-height: 400px;
-    flex: 0 2 70%;
+    max-height: 500px;
     margin: 30px;
     padding: 10px;
 }
