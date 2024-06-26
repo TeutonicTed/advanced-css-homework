@@ -1,0 +1,157 @@
+/* GENERAL */
+
+
+*{
+    margin: 20px;
+    padding: 10px;
+}
+
+
+
+/* HEADER-NAV  */
+
+a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.header h1{
+    display: inline-flex;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+/* Used space-between to separated header & nav items from each other */
+nav.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+/* Used to adjust navigation bar */
+section ul li{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* MAIN  */
+
+.header h2{
+    position: absolute;
+    font-size: 26px;
+}
+
+#about-me{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* About me */
+#summary{
+    margin: 20px 100px;
+    padding: 5px 250px;
+    flex-basis: 100%
+}
+
+/* Thumbnail Headshot */
+.circular--portrait {
+    display: flex;
+    width: 300px; 
+    height: 300px; 
+    overflow: hidden; 
+    border-radius: 50%;
+}
+
+.circular--portrait img { 
+    width: 100%; 
+    height: auto;
+}
+
+/* Allows images to stack into columns & adjust sizing for "About-Me Summary" */
+@media screen and (max-width: 768px) {
+    #summary{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 5px 30px;
+    }
+}
+
+#work h2{
+    padding: -15px;
+}
+
+/* Work */
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 0 1 70%;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.work img{
+    display: flex;
+    background-color: gray;
+    color: white;
+    padding: 1px;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#image-1{
+    display: flex;
+    background-color: gray;
+    justify-items: center;
+    align-items: center;
+    max-width: 800px;
+    max-height: 400px;
+    flex: 0 2 70%;
+    margin: 30px;
+    padding: 10px;
+}
+
+/* H3 tags for project images */
+.work #title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+    max-width: 300px;
+}
+
+/* CONTACT ME */
+
+/* Used to get contents of "Contact Me" to adjust evenly, given the browser size */
+#content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+.contact-me h2{
+    font-size: 26px;
+    margin: 20px;
+    padding: 10px;
+}
+
