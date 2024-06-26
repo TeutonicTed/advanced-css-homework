@@ -43,7 +43,7 @@ section ul li{
 /* MAIN  */
 
 .header h2{
-    position: absolute;
+    position: relative;
     font-size: 26px;
 }
 
@@ -115,6 +115,7 @@ section ul li{
 }
 
 #image-1{
+    display: flex;
     background-color: gray;
     justify-items: center;
     align-items: center;
